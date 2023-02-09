@@ -1,0 +1,58 @@
+.banner {
+	position: relative;
+	height: 448px;
+	color: white;
+	object-fit: contain; /*  so it doesn't stretch regardless of what we add on top of it */
+}
+.banner__contents {
+	margin-inline-start: 30px;
+	padding-block-start: 140px;
+	height: 190px;
+	position: absolute;
+}
+
+.banner__title {
+	font-size: 3rem;
+	font-weight: 800;
+	padding-block-end: 0.3rem;
+}
+
+.banner__description {
+	width: 45rem;
+	line-height: 1.3;
+	padding-block-start: 1rem;
+	font-size: 0.8rem;
+	max-width: 360px;
+	height: 80px;
+}
+
+/* put an empty div, target it then fade with background-image. starts with transparent and end with the full color  */
+.banner--fadeButton {
+	position: relative;
+	top: 330px;
+	left: 0;
+	height: 7.4rem;
+	background-image: linear-gradient(180deg, transparent, rgba(19, 19, 19, 0.692), rgb(0, 0, 0));
+}
+
+/* transparent like button  */
+.banner__button {
+	cursor: pointer;
+	color: #fff;
+	outline: none;
+	border: none;
+	font-weight: 700;
+	border-radius: 0.2vw;
+	padding-inline-start: 2rem;
+	padding-inline-end: 2rem;
+	margin-inline-end: 1rem;
+	padding-block-start: 0.5rem;
+	background-color: rgba(51, 51, 51, 0.5);
+	padding-bottom: 0.5rem;
+}
+
+.banner__button:hover {
+	color: #000;
+	background-color: #e6e6e6;
+	transition: all 0.2s; /* nice subtle transition  */
+}

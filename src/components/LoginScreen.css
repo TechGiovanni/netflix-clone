@@ -1,0 +1,88 @@
+
+/* to get a full background image  */
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/b321426e-35ae-4661-b899-d63bca17648a/6b9b3a60-4b9a-4334-9753-814ae07c3344/CA-fr-20220926-popsignuptwoweeks-perspective_alpha_website_large.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/* Implement a gradient over the background  */
+.loginScreen__gradient{
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+
+  /* This will give the background a nice effect   */
+  background-image: linear-gradient(to top, rgba(0,0,0,0.8) 0, rgba(0,0,0,0) 60%, rgba(0,0,0,0.8) 100%);
+}
+
+/* netflix login button  */
+.loginScreen__button{
+  position: fixed;
+  top: 28px;
+  right: 58px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.2vw;
+}
+
+/* body contents  */
+.loginScreen__body{
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* above centers the content, and stretches it 0 to the left and 0 to the right  */
+  top: 30%;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
+
+}
+
+.loginScreen__body > h1 {
+  font-size: 3.125rem;
+  margin-bottom: 15px;
+}
+
+.loginScreen__body > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-block-end: 25px;
+}
+.loginScreen__body > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  
+}
+.loginScreen__input{
+  margin: 20px;
+}
+
+/* targeting the input field  */
+.loginScreen__input > form > label > input {
+  padding: 10px;
+  outline-width: 0; /* takes away the blue outline inside the input field */
+  height: 30px;
+  width: 30%; /* to make the input react to the screen size  */
+  border: none;
+  max-width: 600px;
+}
+
+.loginScreen__start{
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  cursor: pointer;
+}

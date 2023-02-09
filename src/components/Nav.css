@@ -1,0 +1,41 @@
+.nav {
+	position: fixed;
+	top: 0;
+	padding: 20px;
+	width: 100%;
+	height: 50px;
+	z-index: 1;
+
+	/* animation that when scrolls the nav disappear */
+	transition-timing-function: ease-in;
+	transition: all 0.5s;
+}
+
+.nav__black {
+	background-color: #111;
+}
+
+.nav__content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.netflix__logo {
+	position: fixed;
+	top: 28px;
+	left: 58px;
+	fill: red;
+	width: 160px;
+	height: 160px;
+	cursor: pointer;
+	object-fit: contain;
+}
+
+.nav__avatar {
+	position: fixed;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
